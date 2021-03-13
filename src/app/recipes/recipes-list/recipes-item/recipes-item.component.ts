@@ -1,7 +1,6 @@
 import { TitleCasePipe } from '@angular/common';
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { Recipe } from '../../recipes.model';
-import { RecipesServices } from '../../recipes.service';
 
 @Component({
   selector: 'app-recipes-item',
@@ -11,14 +10,11 @@ import { RecipesServices } from '../../recipes.service';
 export class RecipesItemComponent implements OnInit {
 
   @Input() recipe: Recipe;
-
-  constructor(private recipeService: RecipesServices) { }
+  @Input() index: number;
 
   ngOnInit(): void {
   }
 
-  onSelectRecipe() {
-    this.recipeService.recipeSelected.emit(this.recipe);
-  }
+
 
 }
