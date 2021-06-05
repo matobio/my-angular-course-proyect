@@ -8,7 +8,7 @@
     "build-tomcat": "ng build --prod --base-href=/my-angular-course-proyect/",
     "build-github": "ng build --prod --base-href=/my-angular-course-proyect/",
     "postinstall": "node ./node_modules/husky/lib/installer/bin install",
-    "deploy": "git push origin `git subtree split --prefix dist master`:gh-pages --force",
+    "deploy": "git push origin `git subtree split --prefix dist main`:gh-pages --force",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
