@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-angular-course-proyect": {
+    "my-angular-course-project": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-angular-course-proyect:build"
+            "browserTarget": "my-angular-course-project:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-angular-course-proyect:build:production"
+              "browserTarget": "my-angular-course-project:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-angular-course-proyect:build"
+            "browserTarget": "my-angular-course-project:build"
           }
         },
         "test": {
@@ -101,16 +101,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-angular-course-proyect:serve"
+            "devServerTarget": "my-angular-course-project:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-angular-course-proyect:serve:production"
+              "devServerTarget": "my-angular-course-project:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "my-angular-course-proyect"
+  "defaultProject": "my-angular-course-project"
 }

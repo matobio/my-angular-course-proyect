@@ -3,19 +3,17 @@ import { Component, HostListener } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
-
-  title = 'my-angular-course-proyect';
+  title = 'my-angular-course-project';
   loadedFeature = 'recipe';
 
   element: any;
 
   @HostListener('window:click', ['$event.target'])
   onClick(targetElement: any) {
-    this.element = targetElement
+    this.element = targetElement;
   }
 
   @HostListener('window:keydown', ['$event'])
