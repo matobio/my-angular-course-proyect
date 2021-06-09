@@ -1,8 +1,8 @@
-# my-angular-course-proyect
+# my-angular-course-project
 
 Angular course project
 
-App URL: https://matobio.github.io/my-angular-course-proyect/
+App URL: https://matobio.github.io/my-angular-course-project/
 
 # The course
 
